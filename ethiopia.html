@@ -3,53 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Эфиопия - Презентация</title>
+    <title>Презентация: Эфиопия</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f5f5f5;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f8f1e5;
             margin: 0;
             padding: 20px;
             color: #333;
+            line-height: 1.6;
         }
         .slide {
             background: white;
-            border-radius: 10px;
-            padding: 20px;
+            border-radius: 15px;
+            padding: 25px;
             margin: 20px auto;
-            max-width: 800px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            max-width: 900px;
+            box-shadow: 0 6px 12px rgba(0,0,0,0.15);
             display: none;
+            border-left: 5px solid #d4af37;
         }
         .slide.active {
             display: block;
+            animation: fadeIn 0.5s ease-in-out;
         }
         h1 {
-            color: #d4af37;
+            color: #8b4513;
             text-align: center;
+            margin-bottom: 30px;
+            font-size: 28px;
+            border-bottom: 2px solid #d4af37;
+            padding-bottom: 10px;
         }
         h2 {
-            color: #8b4513;
-            border-bottom: 2px solid #d4af37;
-            padding-bottom: 5px;
+            color: #5d3a1a;
+            margin-top: 25px;
+            font-size: 22px;
+        }
+        p, li {
+            font-size: 18px;
         }
         ul {
-            padding-left: 20px;
+            padding-left: 25px;
         }
         li {
-            margin-bottom: 8px;
+            margin-bottom: 10px;
+        }
+        strong {
+            color: #8b4513;
         }
         .qr-info {
             text-align: center;
-            margin: 30px 0;
+            margin: 40px 0 20px;
             font-style: italic;
-            color: #666;
+            color: #777;
+            font-size: 16px;
+        }
+        .ingredients {
+            background-color: #f9f3e9;
+            padding: 15px;
+            border-radius: 10px;
+            margin-top: 15px;
+        }
+        .ingredients h3 {
+            margin-top: 0;
+            color: #8b4513;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
         }
     </style>
 </head>
 <body>
+    <!-- Слайд 1 -->
     <div id="slide1" class="slide">
         <h1>Экономико-географическая характеристика Эфиопии (2025)</h1>
+        
         <h2>Площадь территории</h2>
         <p>Эфиопия занимает площадь <strong>1 104 300 км²</strong>, что делает её одной из крупнейших стран Африки.</p>
         
@@ -66,8 +96,10 @@
         <p>Президентом Эфиопии является <strong>Сахиле-Ворк Зевде</strong>, исполняющий в основном представительские функции.</p>
     </div>
 
+    <!-- Слайд 2 -->
     <div id="slide2" class="slide">
-        <h1>Хозяйственная деятельность</h1>
+        <h1>Хозяйственная деятельность Эфиопии</h1>
+        
         <h2>Растениеводство</h2>
         <p>Основные культуры — <strong>кофе (крупнейший экспортный продукт), тефф, кукуруза, пшеница, сорго</strong>.</p>
         
@@ -81,13 +113,27 @@
         <p>Развито в озёрах и реках, основная рыба — <strong>нильский окунь, тилапия</strong>.</p>
     </div>
 
+    <!-- Слайд 3 -->
     <div id="slide3" class="slide">
         <h1>Этнический состав и религия</h1>
+        
         <h2>Этническое население Эфиопии</h2>
-        <p>Основу населения составляют <strong>оромо (34%), амхара (27%), сомали (6%), тиграи (6%)</strong> и другие народности.</p>
+        <p>Основу населения составляют:</p>
+        <ul>
+            <li><strong>Оромо</strong> (34%)</li>
+            <li><strong>Амхара</strong> (27%)</li>
+            <li><strong>Сомали</strong> (6%)</li>
+            <li><strong>Тиграи</strong> (6%)</li>
+            <li>Другие народности</li>
+        </ul>
         
         <h2>Религия</h2>
-        <p>Преобладает <strong>христианство (Эфиопская православная церковь — 43%)</strong> и <strong>ислам (34%)</strong>, также есть традиционные верования.</p>
+        <p>Преобладает:</p>
+        <ul>
+            <li><strong>Христианство</strong> (Эфиопская православная церковь — 43%)</li>
+            <li><strong>Ислам</strong> (34%)</li>
+            <li>Традиционные верования</li>
+        </ul>
         
         <h2>Национальные меньшинства (2021)</h2>
         <ul>
@@ -99,23 +145,128 @@
         </ul>
     </div>
 
-    <!-- Остальные слайды (4-9) аналогично -->
-    <!-- Чтобы не перегружать пример, здесь они сокращены, но в реальном файле должны быть все -->
+    <!-- Слайд 4 -->
+    <div id="slide4" class="slide">
+        <h1>Крупные города Эфиопии</h1>
+        
+        <h2>Аддис-Абеба</h2>
+        <p>Столица Эфиопии. Население: <strong>5,5 млн человек</strong> (2024 год). Крупнейший политический, экономический и культурный центр страны.</p>
+        
+        <h2>Дыре-Дауа</h2>
+        <p>Население: <strong>500 тыс. человек</strong> (2024 год). Важный торговый и транспортный узел.</p>
+        
+        <h2>Мекеле</h2>
+        <p>Население: <strong>400 тыс. человек</strong> (2024 год). Крупный промышленный и образовательный центр.</p>
+    </div>
+
+    <!-- Слайд 5 -->
+    <div id="slide5" class="slide">
+        <h1>Известные деятели Эфиопии</h1>
+        
+        <h2>Культура</h2>
+        <p><strong>Хайле Гебрселассие</strong> - легендарный бегун, олимпийский чемпион и мировой рекордсмен.</p>
+        
+        <h2>Спорт</h2>
+        <p><strong>Кенениса Бекеле</strong> - выдающийся легкоатлет, многократный чемпион мира и Олимпийских игр.</p>
+        
+        <h2>Наука</h2>
+        <p><strong>Лидия Пул</strong> - известная эфиопская учёная в области биохимии и генетики.</p>
+    </div>
+
+    <!-- Слайд 6 -->
+    <div id="slide6" class="slide">
+        <h1>Национальная кухня: Инжэра</h1>
+        
+        <p>Традиционная эфиопская лепёшка из теффовой муки, которая служит основой для многих блюд.</p>
+        
+        <div class="ingredients">
+            <h3>Ингредиенты:</h3>
+            <ul>
+                <li>Теффовая мука – 1 кг</li>
+                <li>Вода – 2 л</li>
+                <li>Соль – по вкусу</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Слайд 7 -->
+    <div id="slide7" class="slide">
+        <h1>Национальная кухня: Ват</h1>
+        
+        <p>Острое мясное рагу - одно из самых популярных блюд эфиопской кухни.</p>
+        
+        <div class="ingredients">
+            <h3>Ингредиенты (на 10 человек):</h3>
+            <ul>
+                <li>Мясо (говядина или баранина) – 2 кг</li>
+                <li>Лук – 500 г</li>
+                <li>Чеснок – 50 г</li>
+                <li>Имбирь – 30 г</li>
+                <li>Бербере (острая приправа) – 100 г</li>
+                <li>Помидоры – 500 г</li>
+                <li>Масло – 200 г</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Слайд 8 -->
+    <div id="slide8" class="slide">
+        <h1>Национальная кухня: Теж</h1>
+        
+        <p>Традиционное медовое вино, популярный алкогольный напиток в Эфиопии.</p>
+        
+        <div class="ingredients">
+            <h3>Ингредиенты (на 10 человек):</h3>
+            <ul>
+                <li>Мёд – 1 кг</li>
+                <li>Вода – 5 л</li>
+                <li>Дрожжи – 20 г</li>
+                <li>Хмель – 10 г</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Слайд 9 -->
+    <div id="slide9" class="slide">
+        <h1>Национальная кухня: Широ</h1>
+        
+        <p>Популярная нутовая паста, которую часто подают с инжерой.</p>
+        
+        <div class="ingredients">
+            <h3>Ингредиенты (на 10 человек):</h3>
+            <ul>
+                <li>Нут – 1 кг</li>
+                <li>Лук – 300 г</li>
+                <li>Чеснок – 50 г</li>
+                <li>Имбирь – 30 г</li>
+                <li>Куркума – 10 г</li>
+                <li>Масло – 100 г</li>
+            </ul>
+        </div>
+    </div>
 
     <div class="qr-info">
-        Этот текст соответствует слайду презентации. Закройте страницу, чтобы вернуться.
+        Это содержимое слайда презентации. Закройте страницу, чтобы вернуться.
     </div>
 
     <script>
         // Определяем, какой слайд показать на основе URL
-        const urlParams = new URLSearchParams(window.location.search);
-        const slideNumber = urlParams.get('slide') || 1;
+        document.addEventListener('DOMContentLoaded', function() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const slideNumber = urlParams.get('slide') || 1;
 
-        // Скрываем все слайды и показываем нужный
-        document.querySelectorAll('.slide').forEach(slide => {
-            slide.classList.remove('active');
+            // Скрываем все слайды и показываем нужный
+            document.querySelectorAll('.slide').forEach(slide => {
+                slide.classList.remove('active');
+            });
+            
+            const activeSlide = document.getElementById(`slide${slideNumber}`);
+            if (activeSlide) {
+                activeSlide.classList.add('active');
+            } else {
+                document.getElementById('slide1').classList.add('active');
+            }
         });
-        document.getElementById(`slide${slideNumber}`).classList.add('active');
     </script>
 </body>
 </html>
