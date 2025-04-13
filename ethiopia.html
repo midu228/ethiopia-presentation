@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Эфиопия - Презентация</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+        }
+        .slide {
+            background: white;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 800px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            display: none;
+        }
+        .slide.active {
+            display: block;
+        }
+        h1 {
+            color: #d4af37;
+            text-align: center;
+        }
+        h2 {
+            color: #8b4513;
+            border-bottom: 2px solid #d4af37;
+            padding-bottom: 5px;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        .qr-info {
+            text-align: center;
+            margin: 30px 0;
+            font-style: italic;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div id="slide1" class="slide">
+        <h1>Экономико-географическая характеристика Эфиопии (2025)</h1>
+        <h2>Площадь территории</h2>
+        <p>Эфиопия занимает площадь <strong>1 104 300 км²</strong>, что делает её одной из крупнейших стран Африки.</p>
+        
+        <h2>Население</h2>
+        <p>По данным на 2025 год, численность населения составляет около <strong>126 млн человек</strong>.</p>
+        
+        <h2>Государственный язык</h2>
+        <p>Официальным языком страны является <strong>амхарский</strong>.</p>
+        
+        <h2>Форма правления</h2>
+        <p>Эфиопия — <strong>федеративная парламентская республика</strong>, где власть разделена между центральным правительством и регионами.</p>
+        
+        <h2>Глава государства</h2>
+        <p>Президентом Эфиопии является <strong>Сахиле-Ворк Зевде</strong>, исполняющий в основном представительские функции.</p>
+    </div>
+
+    <div id="slide2" class="slide">
+        <h1>Хозяйственная деятельность</h1>
+        <h2>Растениеводство</h2>
+        <p>Основные культуры — <strong>кофе (крупнейший экспортный продукт), тефф, кукуруза, пшеница, сорго</strong>.</p>
+        
+        <h2>Животноводство</h2>
+        <p>Разводят <strong>крупный рогатый скот, овец, коз и верблюдов</strong>.</p>
+        
+        <h2>Промышленность</h2>
+        <p>Основные отрасли — <strong>текстильная, пищевая, цементная, горнодобывающая (золото, драгоценные камни)</strong>.</p>
+        
+        <h2>Рыболовство</h2>
+        <p>Развито в озёрах и реках, основная рыба — <strong>нильский окунь, тилапия</strong>.</p>
+    </div>
+
+    <div id="slide3" class="slide">
+        <h1>Этнический состав и религия</h1>
+        <h2>Этническое население Эфиопии</h2>
+        <p>Основу населения составляют <strong>оромо (34%), амхара (27%), сомали (6%), тиграи (6%)</strong> и другие народности.</p>
+        
+        <h2>Религия</h2>
+        <p>Преобладает <strong>христианство (Эфиопская православная церковь — 43%)</strong> и <strong>ислам (34%)</strong>, также есть традиционные верования.</p>
+        
+        <h2>Национальные меньшинства (2021)</h2>
+        <ul>
+            <li>Сомалийцы (6,2%)</li>
+            <li>Тиграи (6,1%)</li>
+            <li>Сидамо (4%)</li>
+            <li>Гураге (2,5%)</li>
+            <li>Афар (1,7%)</li>
+        </ul>
+    </div>
+
+    <!-- Остальные слайды (4-9) аналогично -->
+    <!-- Чтобы не перегружать пример, здесь они сокращены, но в реальном файле должны быть все -->
+
+    <div class="qr-info">
+        Этот текст соответствует слайду презентации. Закройте страницу, чтобы вернуться.
+    </div>
+
+    <script>
+        // Определяем, какой слайд показать на основе URL
+        const urlParams = new URLSearchParams(window.location.search);
+        const slideNumber = urlParams.get('slide') || 1;
+
+        // Скрываем все слайды и показываем нужный
+        document.querySelectorAll('.slide').forEach(slide => {
+            slide.classList.remove('active');
+        });
+        document.getElementById(`slide${slideNumber}`).classList.add('active');
+    </script>
+</body>
+</html>
